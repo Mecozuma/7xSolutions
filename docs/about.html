@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  body{
+  font:15px/1.5 Arial, Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/*Global*/
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+  }
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left:20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/*Header**/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+ header li{
+  float:left;
+  display:inline;
+  padding:0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+  }
+  
+  header #branding h1{
+    margin:0;
+    }
+    
+    header nav{
+      float:right;
+      margin:10px;
+    }
+   
+   header .highlight, header .current a{
+     color:#e8491d;
+     font-weight:bold;
+   }
+   
+   header a:hover{
+     color:#cccccc;
+     font-weight: bold;
+   }
+   
+   /*Showcase*/
+   #showcase{
+     min-height:400px;
+     background:url(http://www.freehdimages.in/uploads/large/desktop-hd-orange-and-blue-background.jpg) no-repeat 0 -400px;
+ text-align:center;
+ color:#ffffff;
+   }
+   
+   #showcase h1{
+     margin-top:100px;
+     font-size:55px;
+     margin-bottom:10px;
+   }
+   
+   #showcase p{
+     font-size:20px;
+   }
+   /*Newsletter*/
+   #newsletter{
+     padding:15px;
+     color:#ffffff;
+     background:#35424a
+   } 
+   
+   #newsletter h1{
+     float:left;
+   }
+   
+   #newsletter form{
+     float:right;
+     margin-top:15px;
+   }
+   
+   #newsletter input[type="email"]{
+     padding:4px;
+     height:25px;
+     width:250px;
+  
+ 
+ }
+   
+   /*Boxes*/
+   #boxes{
+     margin-top:20px;
+   }
+   
+   #boxes .box{
+     float:left;
+     text-align:center;
+     width:30%;
+     padding:10px;
+   }
+   
+  #boxes .box img{
+    width:90px;
+  } 
+  
+  /*Sidebar*/
+  aside#sidebar{
+    float:right;
+    width:30%;
+    margin-top:10px;
+  }
+ 
+ aside#sidebar .quote input,  aside#sidebar .quote textarea {
+    width:90%;
+    padding:5px;
+  }
+  
+  /*Main-col*/
+  article#main-col{
+    float:left;
+    width:65%;
+  }
+  /*Services*/
+  ul#services li{
+    list-style:none;
+    padding:20px;
+    border:#cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
+  }
+  
+  
+   
+   footer{
+     padding:20px;
+     margin-top:20px;
+     color:#ffffff;
+     background-color:#e8491d;
+     text-align:center;
+   }
+   
+   /* Media Queries*/
+   @media(max-width:768px){
+     header #branding,header nav,header nav li,#newsletter h1,#newsletter form,#boxes .box,article#main-col,aside#sidebar {
+       float:none;
+       text-align:center;
+       width:100%;
+     }
+     header{
+       padding-bottom:20px;
+     }
+     
+     #showcase h1{
+       margin-top:40px;
+     }
+     
+     #newsletter button, .quote button {
+       display:block;
+       width:100%;
+     }
+     
+     #newsletter form input[type="email"], .quote input, .quote textarea{
+       width:100%;
+       margin-bottom:5px;
+       
+     }
+     
+     }
+     
+      
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable Editing Professionals">
+    <meta name="keywords" content="editing, marketing, affordable">
+    <meta name="author" content="George Keough">
+    <title>7xSolutions | About</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+  <header>
+    <div class="container">
+    <div id="branding">
+    <h1><span class="highlight">7xSolutions</span></h1>
+    </div>
+    <nav>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="current"><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  
+  <section id="newsletter">
+  <div class="container">
+  <h1>
+  Subscribe To Our Newsletter</h1>
+  <form>
+  <input type="email" placeholder="Enter Email..."/>
+  <button type="submit" class="button_1">Subscribe</button>
+  </form>
+  </div>
+  </section>
+  
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <h1 class="page-title">
+        About Us
+        </h1>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p class="dark">
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+        
+      </article>
+      
+      <aside id="sidebar">
+      <div class="dark">
+      
+      
+        <h3>
+        What We Do
+        </h3>
+        <p>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+        </p>
+        </div>
+      </aside>
+      
+      
+    </div>
+  </section>
+  
+  <footer>
+    <p>
+    7xSolutions, Copyright &copy;2018
+    </p>
+  </footer>
+  </body>
+</html>
